@@ -1,0 +1,49 @@
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8d7da;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.errorBox {
+  background-color: #ffffff;
+  border: 1px solid #f5c6cb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.errorTitle {
+  color: #721c24;
+  margin: 0;
+  font-size: 2em;
+}
+
+.errorMessage {
+  color: #721c24;
+  margin: 10px 0 0;
+  font-size: 1.2em;
+}
